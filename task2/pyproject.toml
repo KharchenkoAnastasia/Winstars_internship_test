@@ -1,0 +1,57 @@
+[tool.poetry]
+name = "task1"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+# Core ML / DL
+torch = "^2.2.0"
+tensorflow = "^2.15.0"
+
+# Hugging Face ecosystem
+transformers = "^4.40.0"
+datasets = "^2.18.0"
+
+# Data processing
+numpy = "^1.26.0"
+scikit-learn = "^1.4.0"
+
+# Computer Vision
+opencv-python = "^4.9.0"
+
+# Utilities
+tqdm = "^4.66.0"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "1.19.0"
+ruff = "0.14.8"
+
+[tool.poetry.scripts]
+task1-cli = "main:main"
+
+[tool.mypy]
+python_version = "3.11"
+pretty = true
+show_error_codes = true
+strict = true
+warn_unreachable = true
+ignore_missing_imports = true
+files = ["task2"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["I", "SIM", "UP", "PL", "RUF", "B", "E", "F"]
+ignore = ["PLR0913"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
