@@ -47,7 +47,7 @@ task2/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/task2.git
+git clone https://github.com/KharchenkoAnastasia/Winstars_internship_test.git
 cd task2
 ```
 
