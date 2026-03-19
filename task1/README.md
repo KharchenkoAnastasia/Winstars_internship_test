@@ -47,7 +47,7 @@ Input reshaped to `(28, 28, 1)`. Trained for 5 epochs with batch size 32, Adam o
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/your-username/task1.git
+git clone https://github.com/KharchenkoAnastasia/Winstars_internship_test.git
 cd task1
 ```
 
