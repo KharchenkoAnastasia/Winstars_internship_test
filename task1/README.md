@@ -159,3 +159,32 @@ Accuracy: 0.9892
    macro avg       0.99      0.99      0.99     10000
 weighted avg       0.99      0.99      0.99     10000
 ```
+## Edge Cases
+
+- Ambiguous Handwriting
+
+    Digits that are poorly written or resemble other digits (e.g., 3 vs 5, 4 vs 9) may lead to misclassification.
+
+- Low-Quality or Noisy Images
+
+    Blurred, pixelated, or noisy inputs can degrade model performance, especially for the Random Forest model.
+
+- Class Imbalance Sensitivity
+
+    Although MNIST is relatively balanced, slight variations in class distribution may affect model generalization.
+
+- Out-of-Distribution Inputs
+
+    Non-digit images or symbols (e.g., letters or random shapes) may still be classified as digits with high confidence.
+
+- Shifted or Centering Issues
+
+    Digits not centered or partially cropped in the image can reduce accuracy, particularly for non-CNN models.
+
+- Scaling and Rotation Variations
+  
+    Digits with unusual sizes or slight rotations may not be well recognized if not seen during training.
+
+- Overfitting on Simple Patterns
+  
+    Neural networks trained for a small number of epochs may underfit, while longer training without regularization could overfit.
