@@ -1,14 +1,17 @@
 {
+  "add_prefix_space": true,
   "backend": "tokenizers",
+  "bos_token": "[CLS]",
   "cls_token": "[CLS]",
-  "do_lower_case": false,
+  "do_lower_case": true,
+  "eos_token": "[SEP]",
   "is_local": false,
+  "keep_accents": false,
   "mask_token": "[MASK]",
   "model_max_length": 512,
-  "pad_token": "[PAD]",
+  "pad_token": "<pad>",
   "sep_token": "[SEP]",
-  "strip_accents": null,
-  "tokenize_chinese_chars": true,
-  "tokenizer_class": "BertTokenizer",
-  "unk_token": "[UNK]"
+  "tokenizer_class": "AlbertTokenizer",
+  "trim_offsets": true,
+  "unk_token": "<unk>"
 }
